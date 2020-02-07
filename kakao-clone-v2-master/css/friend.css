@@ -1,0 +1,78 @@
+.friend{
+    display: flex;
+    justify-content: space-between;
+  align-items: center;
+}
+
+.friends .friend__avatar{
+    width:50px;
+    border-radius: 37% ;
+}/*.friends를 지워도 되네? 지우니까 바로 밑 .friend__avatar.g-avatar에서 연결되야하는 
+find의 친구추천 프로필사진까지 변하네 왜일까, 그렇다고 .friends를 .chat로 바꾸면 친구목록의 
+프사가 다 깨진다*/
+
+.friend__avatar.g-avatar{
+   width: 50px;
+   border-radius: 37%;
+  
+}/*이거 friends의 첫쨰둘쨰 프로필이다 html에서 같이 엮여있는듯*/
+/*find의 친구추천 프로필 이미지 class였다.*/
+.friend__avatar.m-avatar{
+width: 60px;
+border-radius: 37%;
+}
+
+.friend .friend__column{
+  display: flex;
+  align-items: center;
+  
+}
+.friend .friend__avatar{
+  margin-right:15px;
+}
+
+.friend__content .friend__name{
+  display: block;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.friend__content .friend__status,
+.friend__content .friend__bottom-text,
+.friend .chat__timestamp{
+opacity: 0.6;
+}
+
+.friend__content .friend__bottom-text{
+  font-size: 14px;
+}
+
+.friend__content .friend__status,
+.friend .chat__timestamp{
+  display: flex;
+  font-size:12px;
+}
+
+
+.friend .friend__now-listening{
+  border: 1px solid #47c272;
+  padding:5px 10px;
+  border-radius: 15px;
+  font-size: 14px;
+}/*신기하게도 .friend로 써도 .friends로 써도 다 작동된다*/
+.friend__now-listening span{ 
+  opacity: 0.6;
+}
+
+.friend__add-btn{
+  display: flex;
+  padding: 10px 15px;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+ background-color: #f5f5f5;
+}
+
+.chats li{
+  margin-top: 23px;
+}
